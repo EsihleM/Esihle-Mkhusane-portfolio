@@ -1,0 +1,27 @@
+ul{
+    list-style: none;
+    padding: 1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    margin: 0 22px;
+}
+.item{
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+
+}
