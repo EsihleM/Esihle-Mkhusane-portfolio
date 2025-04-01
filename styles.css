@@ -4,11 +4,13 @@ ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
 li{
     display: inline;
     margin: 0 22px;
+    color: black;
 }
 .item{
     margin-right: auto;
