@@ -1,3 +1,9 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+}
+
+
 ul{
     list-style: none;
     padding: 1px;
@@ -26,4 +32,58 @@ a:hover{
 footer{
     text-align: center;
 
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Professional dark gradient */
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #1abc9c;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #1abc9c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #16a085;
 }
