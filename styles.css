@@ -33,7 +33,9 @@ footer{
     text-align: center;
 
 }
-
+#projects{
+    text-align: center;
+}
 /* Contact Section */
 #contact {
     text-align: center;
