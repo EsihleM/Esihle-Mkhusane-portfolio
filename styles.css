@@ -33,6 +33,12 @@ footer{
     text-align: center;
 
 }
+
+#education{
+    text-align: center;
+}
+ul.structure {
+    list-style-type: disc; }
 #projects{
     text-align: center;
 }
