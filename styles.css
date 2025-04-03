@@ -240,3 +240,57 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Building Blocks Section */
+#building-blocks {
+    padding: 2rem;
+    background: linear-gradient(to right, #fdfbfb, #ebedee); /* Light gradient background */
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+#building-blocks h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #34495e; /* Dark blue-gray */
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #ffffff; /* White background for each block */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.block img {
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.block img:hover {
+    transform: rotate(360deg); /* Rotate icon on hover */
+}
+
+.block-text h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: #2c3e50; /* Dark text */
+}
+
+.block-text p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Gray text */
+    margin: 0;
+}
