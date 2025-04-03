@@ -283,7 +283,7 @@ button {
 }
 
 button:hover {
-    background: #16a085; /* Darker green on hover */
+    background: black /* Darker green on hover */
 }
 
 /* Additional Styling */
