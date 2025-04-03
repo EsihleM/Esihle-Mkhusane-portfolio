@@ -118,11 +118,23 @@ footer {
     background: #f97300; /* Second color */
     padding: 2rem;
     border-radius: 10px;
-    color: #ffffff; /* White text for contrast */
+
 }
 
 ul.structure {
     list-style-type: disc;
+}
+
+#education ul {
+    list-style-type: disc !important; /* Force bullets to display */
+    margin-left: 2rem; /* Add indentation for bullets */
+    padding-left: 0; /* Remove extra padding if any */
+}
+
+#education li {
+    margin-bottom: 0.5rem; /* Add spacing between list items */
+    color: #0e3047; /* Third color for text */
+    border: 1px solid #f97300; /* Debugging: Add border to confirm rendering */
 }
 
 /* Projects Section */
