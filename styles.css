@@ -64,13 +64,47 @@ header h1 {
     width: 200px; /* Square dimensions */
     height: 200px; /* Square dimensions */
     object-fit: cover; /* Ensure the image fits within the square */
-    border-radius: 0; /* Remove circular border */
+    border-radius: 0; /* Keep the image square */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     transition: filter 0.3s ease; /* Smooth transition for hover effect */
+    position: relative; /* For positioning the animated border */
 }
 
 .profile-pic:hover {
     filter: grayscale(100%); /* Turn the image black and white on hover */
+}
+
+/* Animated Border */
+.profile-pic::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px dashed #f97300; /* Dashed border with Second color */
+    border-radius: 0; /* Keep the border square */
+    animation: move-border 2s linear infinite; /* Apply animation */
+    z-index: -1; /* Ensure the border is behind the image */
+}
+
+/* Border Animation */
+@keyframes move-border {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(5px, 0);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+    75% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .profile-text h1 {
@@ -382,20 +416,19 @@ a:hover {
 /* Flip Cards Section */
 #tips-section {
     margin: 2rem 0;
-    text-align: right;
-    padding-right: 2rem;
+    text-align: center;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    justify-content: center;
+    display: flex; /* Use flexbox for a single-row layout */
+    gap: 1rem; /* Reduce the gap between cards */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
 }
 
 .card {
-    width: 150px;
-    height: 200px;
+    width: 220px; /* Slightly larger card width */
+    height: 280px; /* Slightly larger card height */
     perspective: 1000px;
     cursor: pointer;
 }
@@ -411,17 +444,23 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.6s;
+    padding: 1rem; /* Add padding for better content spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
 }
 
 .card-front {
-    background: #f97300; /* Second color */
+    background: #10828c; /* Fourth color */
     color: white;
+    font-size: 1.2rem; /* Increase font size for better readability */
+    text-align: center;
 }
 
 .card-back {
-    background: #0e3047; /* Third color */
+    background: #f97300; /* Second color */
     color: white;
     transform: rotateY(180deg);
+    font-size: 1rem; /* Increase font size for better readability */
+    text-align: center;
 }
 
 .card:hover .card-front {
@@ -437,17 +476,3 @@ a:hover {
     transform-style: preserve-3d;
 }
 
-#quiz-button {
-    padding: 10px 20px;
-    background: #f97300; /* Second color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-
-#quiz-button:hover {
-    background: #0e3047; /* Third color */
-}
