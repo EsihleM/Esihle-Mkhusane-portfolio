@@ -61,11 +61,16 @@ header h1 {
 }
 
 .profile-pic {
-    width: 150px; /* Square dimensions */
-    height: 150px; /* Square dimensions */
+    width: 200px; /* Square dimensions */
+    height: 200px; /* Square dimensions */
     object-fit: cover; /* Ensure the image fits within the square */
-    border-radius: 50%; /* Make the image circular */
+    border-radius: 0; /* Remove circular border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-pic:hover {
+    filter: grayscale(100%); /* Turn the image black and white on hover */
 }
 
 .profile-text h1 {
