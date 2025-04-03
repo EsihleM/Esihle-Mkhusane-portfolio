@@ -3,15 +3,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('binary-gif.gif') no-repeat center center fixed; /* Add binary 0s and 1s gif */
-    background-size: cover;
-    color: #2c3e50;
+    background: #f8f5e4; /* First color */
+    color: #0e3047; /* Third color for text */
     text-align: center;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: transparent; /* Remove borders and background */
+    background-color: #10828c; /* Fourth color */
     padding: 1rem 0;
 }
 
@@ -26,13 +25,13 @@ nav {
 
 .nav li a {
     text-decoration: none;
-    color: #ecf0f1;
+    color: #f8f5e4; /* First color */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav li a:hover {
-    color: #1abc9c;
+    color: #f97300; /* Second color */
 }
 
 /* Header Section */
@@ -43,7 +42,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #0e3047; /* Third color */
 }
 
 /* Profile Section */
@@ -74,12 +73,12 @@ header h1 {
 
 .profile-text h2 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #0e3047; /* Third color */
 }
 
 .profile-text p {
     font-size: 1.2rem;
-    color: #ecf0f1;
+    color: #10828c; /* Fourth color */
 }
 
 /* Section Styling */
@@ -88,10 +87,10 @@ section {
 }
 
 #home {
-    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Soft pink gradient */
+    background: #10828c; /* Fourth color */
     padding: 2rem;
     border-radius: 10px;
-    color: #2c3e50;
+    color: #f8f5e4; /* First color */
 }
 
 /* Links and Icons */
@@ -106,8 +105,8 @@ a img:hover {
 
 /* Footer */
 footer {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #0e3047; /* Third color */
+    color: #f8f5e4; /* First color */
     padding: 1rem 0;
     margin-top: 2rem;
     text-align: center;
@@ -116,7 +115,7 @@ footer {
 /* Education Section */
 #education {
     text-align: center;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+    background: #f97300; /* Second color */
     padding: 2rem;
     border-radius: 10px;
     color: #ffffff; /* White text for contrast */
@@ -148,7 +147,7 @@ ul.structure {
 
 .project h2 {
     font-size: 1.8rem;
-    color: #34495e; /* Dark blue-gray */
+    color: #0e3047; /* Third color */
     margin-bottom: 0.5rem;
 }
 
@@ -172,17 +171,17 @@ ul.structure {
 #contact {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm orange gradient */
-    color: #2c3e50; /* Dark text for readability */
+    background: #10828c; /* Fourth color */
+    color: #f8f5e4; /* First color */
 }
 
 /* Tech Stack Section */
 #tech-stack {
     text-align: center;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Soft pink gradient */
+    background: #f8f5e4; /* First color */
     padding: 2rem;
     border-radius: 10px;
-    color: #2c3e50; /* Dark text for readability */
+    color: #0e3047; /* Third color */
 }
 
 #tech-stack .tech-icons {
@@ -215,7 +214,7 @@ ul.structure {
 #tech-stack .tech-item p {
     font-size: 1rem;
     font-weight: bold;
-    color: #34495e; /* Matches the nav background */
+    color: #0e3047; /* Third color */
     margin: 0;
 }
 
@@ -357,6 +356,8 @@ a:hover {
 /* Flip Cards Section */
 #tips-section {
     margin: 2rem 0;
+    text-align: right;
+    padding-right: 2rem;
 }
 
 .card-container {
@@ -387,12 +388,12 @@ a:hover {
 }
 
 .card-front {
-    background: #1abc9c;
+    background: #f97300; /* Second color */
     color: white;
 }
 
 .card-back {
-    background: #34495e;
+    background: #0e3047; /* Third color */
     color: white;
     transform: rotateY(180deg);
 }
@@ -412,7 +413,7 @@ a:hover {
 
 #quiz-button {
     padding: 10px 20px;
-    background: #1abc9c;
+    background: #f97300; /* Second color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -422,5 +423,5 @@ a:hover {
 }
 
 #quiz-button:hover {
-    background: #16a085;
+    background: #0e3047; /* Third color */
 }
