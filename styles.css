@@ -184,6 +184,12 @@ ul.structure {
     color: #0e3047; /* Third color */
 }
 
+#tech-stack p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #0e3047; /* Third color */
+}
+
 #tech-stack .tech-icons {
     display: flex;
     flex-wrap: wrap;
