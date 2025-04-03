@@ -476,3 +476,25 @@ a:hover {
     transform-style: preserve-3d;
 }
 
+/* Download CV */
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #10828c; /* Fourth color */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.download-cv:hover {
+    color: #f97300; /* Second color */
+}
+
+.download-cv img {
+    width: 20px;
+    height: 20px;
+}
+
