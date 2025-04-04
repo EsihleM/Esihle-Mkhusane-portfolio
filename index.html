@@ -88,5 +88,17 @@
     <footer>
         <p>&copy; Coded by Esihle Mkhusane, all rights reserved</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach((card) => {
+                card.addEventListener("click", () => {
+                    card.classList.toggle("is-flipped");
+                });
+            });
+        });
+    </script>
 </body>
 </html>
